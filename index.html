@@ -59,6 +59,39 @@
       tbody.appendChild(trAgeValue);
       trAgeValue.appendChild(tdAgeValue);
       tdAgeValue.appendChild(inputAge);
+      //   table tbody > tr for genre
+      const trGenre = document.createElement("tr");
+      const tdGenre = document.createElement("td");
+      const labelGenre = document.createElement("label");
+      labelGenre.setAttribute("for", "genre");
+      labelGenre.textContent = "Jenis Kelamin";
+      tbody.appendChild(trGenre);
+      trGenre.appendChild(tdGenre);
+      tdGenre.appendChild(labelGenre);
+
+      const trGenreValue = document.createElement("tr");
+      const tdGenreValue = document.createElement("td");
+      const maleText = document.createElement("span");
+      const femaleText = document.createElement("span");
+      maleText.textContent = "Laki-laki";
+      femaleText.textContent = "Perempuan";
+      tbody.appendChild(trGenreValue);  
+      trGenreValue.appendChild(tdGenreValue);  
+      const radioGenreMale = document.createElement("input");
+      const radioGenreFemale = document.createElement("input");
+      radioGenreMale.setAttribute("type", "radio");
+      radioGenreMale.setAttribute("id", "genre");
+      radioGenreMale.setAttribute("name", "genre");
+      radioGenreMale.setAttribute("value", "laki-laki");
+      radioGenreFemale.setAttribute("type", "radio");
+      radioGenreFemale.setAttribute("id", "genre");
+      radioGenreFemale.setAttribute("name", "genre");
+      radioGenreFemale.setAttribute("value", "perempuan");
+      tdGenreValue.appendChild(radioGenreFemale)
+      tdGenreValue.appendChild(maleText)
+      tdGenreValue.appendChild(radioGenreMale)
+      tdGenreValue.appendChild(femaleText)
+    //   table tbody > tr for survey
     </script>
   </body>
 </html>
