@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Survey</title>
+    <style>
+      table {
+        background-color: tomato;
+        margin-inline: 25%;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // tabel dan tbody
+      const form = document.createElement("form");
+      document.body.appendChild(form);
+      const table = document.createElement("table");
+      form.appendChild(table);
+      const tbody = document.createElement("tbody");
+      table.appendChild(tbody);
+      // table tbody > tr for name
+      const trName = document.createElement("tr");
+      const tdName = document.createElement("td");
+      const labelName = document.createElement("label");
+      labelName.setAttribute("for", "name");
+      labelName.textContent = "Siapa Nama Anda"
+      tbody.appendChild(trName);
+      trName.appendChild(tdName);
+      tdName.appendChild(labelName);
+
+      const trNameValue = document.createElement("tr");
+      const tdNameValue = document.createElement("td");
+      const inputName = document.createElement("input");
+      inputName.setAttribute("type", "text")
+      inputName.setAttribute("name", "name")
+      inputName.setAttribute("id", "name")
+      tbody.appendChild(trNameValue);
+      trNameValue.appendChild(tdNameValue);
+      tdNameValue.appendChild(inputName);
+    </script>
+  </body>
+</html>
