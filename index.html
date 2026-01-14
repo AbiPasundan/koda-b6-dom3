@@ -26,7 +26,7 @@
       const tdName = document.createElement("td");
       const labelName = document.createElement("label");
       labelName.setAttribute("for", "name");
-      labelName.textContent = "Siapa Nama Anda"
+      labelName.textContent = "Siapa Nama Anda";
       tbody.appendChild(trName);
       trName.appendChild(tdName);
       tdName.appendChild(labelName);
@@ -34,12 +34,31 @@
       const trNameValue = document.createElement("tr");
       const tdNameValue = document.createElement("td");
       const inputName = document.createElement("input");
-      inputName.setAttribute("type", "text")
-      inputName.setAttribute("name", "name")
-      inputName.setAttribute("id", "name")
+      inputName.setAttribute("type", "text");
+      inputName.setAttribute("name", "name");
+      inputName.setAttribute("id", "name");
       tbody.appendChild(trNameValue);
       trNameValue.appendChild(tdNameValue);
       tdNameValue.appendChild(inputName);
+      //   table tbody > tr for age
+      const trAge = document.createElement("tr");
+      const tdAge = document.createElement("td");
+      const labelAge = document.createElement("label");
+      labelAge.setAttribute("for", "age");
+      labelAge.textContent = "Berapa Umur Anda";
+      tbody.appendChild(trAge);
+      trAge.appendChild(tdAge);
+      tdAge.appendChild(labelAge);
+
+      const trAgeValue = document.createElement("tr");
+      const tdAgeValue = document.createElement("td");
+      const inputAge = document.createElement("input");
+      inputAge.setAttribute("type", "number");
+      inputAge.setAttribute("for", "Age");
+      inputAge.setAttribute("id", "age");
+      tbody.appendChild(trAgeValue);
+      trAgeValue.appendChild(tdAgeValue);
+      tdAgeValue.appendChild(inputAge);
     </script>
   </body>
 </html>
