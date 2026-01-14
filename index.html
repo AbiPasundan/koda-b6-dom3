@@ -112,18 +112,77 @@
       const radioYes = document.createElement("input");
       const radioNo = document.createElement("input");
       radioYes.setAttribute("type", "radio");
-      radioYes.setAttribute("id", "genre");
-      radioYes.setAttribute("name", "genre");
-      radioYes.setAttribute("value", "laki-laki");
+      radioYes.setAttribute("id", "smoke");
+      radioYes.setAttribute("name", "smoke");
+      radioYes.setAttribute("value", "yes");
       radioNo.setAttribute("type", "radio");
-      radioNo.setAttribute("id", "genre");
-      radioNo.setAttribute("name", "genre");
-      radioNo.setAttribute("value", "perempuan");
+      radioNo.setAttribute("id", "smoke");
+      radioNo.setAttribute("name", "smoke");
+      radioNo.setAttribute("value", "no");
       tdSurveyValue.appendChild(radioNo);
       tdSurveyValue.appendChild(yesText);
       tdSurveyValue.appendChild(radioYes);
       tdSurveyValue.appendChild(noText);
-    //    table tbody > tr for chiggarete lists
+      //    table tbody > tr for chiggarete lists
+      const trSmokeLists = document.createElement("tr");
+      const tdSmokeLists = document.createElement("td");
+      const labelSmokeList = document.createElement("label");
+      labelSmokeList.setAttribute("for", "smoke");
+      labelSmokeList.textContent =
+        "Jika anda pernah meroko roko apa yang pernah anda coba?";
+      tbody.appendChild(trSmokeLists);
+      trSmokeLists.appendChild(tdSmokeLists);
+      tdSmokeLists.appendChild(labelSmokeList);
+
+      const trSmokeValue = document.createElement("tr");
+      const tdSmokeValue = document.createElement("td");
+
+      const garisBaru = document.createElement("br");
+      const garisBaru2 = document.createElement("br");
+      const garisBaru3 = document.createElement("br");
+      const garisBaru4 = document.createElement("br");
+
+      const gudangGaram = document.createElement("span");
+      const gudangGaramCheck = document.createElement("input");
+      tdSmokeLists.appendChild(garisBaru);
+      gudangGaramCheck.setAttribute("type", "checkbox");
+      gudangGaramCheck.setAttribute("id", "gudangGaram");
+      gudangGaramCheck.setAttribute("name", "gudangGaram");
+      gudangGaram.textContent = "Gudang Garam";
+      tdSmokeLists.appendChild(gudangGaramCheck);
+      tdSmokeLists.appendChild(gudangGaram);
+
+      const marlboro = document.createElement("span");
+      const marlboroCheck = document.createElement("input");
+      tdSmokeLists.appendChild(garisBaru2);
+      marlboroCheck.setAttribute("type", "checkbox");
+      marlboroCheck.setAttribute("id", "marlboro");
+      marlboroCheck.setAttribute("name", "marlboro");
+      marlboro.textContent = "Marlboro";
+      tdSmokeLists.appendChild(marlboroCheck);
+      tdSmokeLists.appendChild(marlboro);
+
+      const esse = document.createElement("span");
+      const esseCheck = document.createElement("input");
+      tdSmokeLists.appendChild(garisBaru3);
+      esseCheck.setAttribute("type", "checkbox");
+      esseCheck.setAttribute("id", "esse");
+      esseCheck.setAttribute("name", "esse");
+      esse.textContent = "Esse";
+      tdSmokeLists.appendChild(esseCheck);
+      tdSmokeLists.appendChild(esse);
+
+      //   const luckyStrike = document.createElement("span");
+      //   luckyStrike.textContent = "Lucky Strike";
+      const luckyStrike = document.createElement("span");
+      const luckyStrikeCheck = document.createElement("input");
+      tdSmokeLists.appendChild(garisBaru4);
+      luckyStrikeCheck.setAttribute("type", "checkbox");
+      luckyStrikeCheck.setAttribute("id", "luckyStrike");
+      luckyStrikeCheck.setAttribute("name", "luckyStrike");
+      luckyStrike.textContent = "Lucky Strike";
+      tdSmokeLists.appendChild(luckyStrikeCheck);
+      tdSmokeLists.appendChild(luckyStrike);
     </script>
   </body>
 </html>
