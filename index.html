@@ -183,6 +183,27 @@
       luckyStrike.textContent = "Lucky Strike";
       tdSmokeLists.appendChild(luckyStrikeCheck);
       tdSmokeLists.appendChild(luckyStrike);
+
+      // table button
+      const butttonGarisBaru = document.createElement("br");
+      const trButton = document.createElement("tr");
+      const tdButton = document.createElement("td");
+
+      const buttonSubmit = document.createElement("button");
+      buttonSubmit.setAttribute("type", "submit");
+      buttonSubmit.textContent = "Submit";
+      
+      const buttonReset = document.createElement("button");
+      buttonSubmit.setAttribute("type", "reset");
+      buttonReset.textContent = "Reset";
+
+      tbody.appendChild(trButton);
+      trButton.appendChild(tdButton);
+      tdButton.appendChild(butttonGarisBaru)
+      tdButton.appendChild(buttonSubmit)
+      tdButton.appendChild(buttonReset)
+      
+
     </script>
   </body>
 </html>
