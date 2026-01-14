@@ -75,8 +75,8 @@
       const femaleText = document.createElement("span");
       maleText.textContent = "Laki-laki";
       femaleText.textContent = "Perempuan";
-      tbody.appendChild(trGenreValue);  
-      trGenreValue.appendChild(tdGenreValue);  
+      tbody.appendChild(trGenreValue);
+      trGenreValue.appendChild(tdGenreValue);
       const radioGenreMale = document.createElement("input");
       const radioGenreFemale = document.createElement("input");
       radioGenreMale.setAttribute("type", "radio");
@@ -87,11 +87,43 @@
       radioGenreFemale.setAttribute("id", "genre");
       radioGenreFemale.setAttribute("name", "genre");
       radioGenreFemale.setAttribute("value", "perempuan");
-      tdGenreValue.appendChild(radioGenreFemale)
-      tdGenreValue.appendChild(maleText)
-      tdGenreValue.appendChild(radioGenreMale)
-      tdGenreValue.appendChild(femaleText)
-    //   table tbody > tr for survey
+      tdGenreValue.appendChild(radioGenreFemale);
+      tdGenreValue.appendChild(maleText);
+      tdGenreValue.appendChild(radioGenreMale);
+      tdGenreValue.appendChild(femaleText);
+      //   table tbody > tr for survey
+      const trSurvey = document.createElement("tr");
+      const tdSurvey = document.createElement("td");
+      const labelSurvey = document.createElement("label");
+      labelSurvey.setAttribute("for", "genre");
+      labelSurvey.textContent = "Apakan anda merokok?";
+      tbody.appendChild(trSurvey);
+      trSurvey.appendChild(tdSurvey);
+      tdSurvey.appendChild(labelSurvey);
+
+      const trSurveyValue = document.createElement("tr");
+      const tdSurveyValue = document.createElement("td");
+      const yesText = document.createElement("span");
+      const noText = document.createElement("span");
+      yesText.textContent = "Ya";
+      noText.textContent = "Tidak";
+      tbody.appendChild(trSurveyValue);
+      trSurveyValue.appendChild(tdSurveyValue);
+      const radioYes = document.createElement("input");
+      const radioNo = document.createElement("input");
+      radioYes.setAttribute("type", "radio");
+      radioYes.setAttribute("id", "genre");
+      radioYes.setAttribute("name", "genre");
+      radioYes.setAttribute("value", "laki-laki");
+      radioNo.setAttribute("type", "radio");
+      radioNo.setAttribute("id", "genre");
+      radioNo.setAttribute("name", "genre");
+      radioNo.setAttribute("value", "perempuan");
+      tdSurveyValue.appendChild(radioNo);
+      tdSurveyValue.appendChild(yesText);
+      tdSurveyValue.appendChild(radioYes);
+      tdSurveyValue.appendChild(noText);
+    //    table tbody > tr for chiggarete lists
     </script>
   </body>
 </html>
